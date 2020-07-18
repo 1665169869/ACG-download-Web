@@ -13,6 +13,7 @@ body {
   color: #fff;
   background-color: #000;
   position: relative;
+  user-select:none; /*网页禁止选择复制/
  /* 下面是磨砂效果，可选 */
  /*  backdrop-filter: blur(10px); */
 }
