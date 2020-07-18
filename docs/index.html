@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!--使用了https://github.com/atisawd/boxicons图片集-->
 <html lang="ZH-CN">
 <head>
   <meta charset="utf-8">
@@ -18,30 +18,18 @@
   <!-- Vendor CSS Files -->
   <link href="./static/css/bootstrap.min.css" rel="stylesheet">
   <link href="./static/css/icofont.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="./static/css/icofont.css">
   <link href="./static/css/owl.carousel.min.css" rel="stylesheet">
-  <link href="./static/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link href="./static/css/venobox.css" rel="stylesheet">
   <!--js files-->
   <script src="./static/js/google_ga3.js"></script>
   <script src="./static/js/jquery-1.11.1.min.js"></script>
-  <link href="../static/danmu.css">
 
   <!-- Template Main CSS File -->
   <link href="./static/css/style.css" rel="stylesheet">
   <link href="https://at.alicdn.com/t/font_954744_g42joo6uzdr.css" rel="stylesheet">
-  <script>
-    var system ={};  
-    var p = navigator.platform;       
-    system.win = p.indexOf("Win") == 0;  
-    system.mac = p.indexOf("Mac") == 0;  
-   if(system.win||system.mac||system.xll){//如果是电脑跳转到
-           window.location.href="#";  
-   }else{  //如果是手机,跳转到
-          window.location.href="static/m/";  
-    }
 
-</script>
 <style> /*弹幕必备的css属性*/
   .dwn-dm-bottom{
       bottom: 0;
@@ -98,6 +86,7 @@
        #login_click a:hover { background:#d35776; }
 
     </style>
+    <link rel="stylesheet" href="./static/css/font_954744_g42joo6uzdr.css">
 </head>
 
 <body>
@@ -116,17 +105,18 @@
 		 <!--  <li><a href="#about">关于</a></li> -->
           <li><a href="#download">下载</a></li>
          <!--  <li><a href="#portfolio">Soft</a></li> -->
-          <li><a href="#contact">联系</a></li>
+          <li><a href="#contact">关于</a></li>
           <li><a onclick="qqqun()" href="#">群聊</a></li>
 		  <li></li>
         </ul>
       </nav><!-- .nav-menu -->
 
       <div class="social-links">
-        <a href="yy://pd-[sid=2360&subid=1449977277]" class="twitter"><i class="zm zm-waiwai"></i></a>
         <a href="mailto:1665169869@qq.com" class="facebook"><i class="zm zm-youxiang"></i></a>
-        <a onclick="qqqun()" class="facebook" href="#"><i class="zm zm-qq"></i></a>
+        <a onclick="qqqun()" class="facebook" href="#"><i class="zm zm-QQ"></i></a>
         <a href="#" class="google-plus"><i class="zm zm-weixin"></i></a>
+        <a href="https://github.com/1665169869/ACG-download-Web"><i class="bx bxl-github"></i></a>
+        <a href="https://twitter.com/baiyu1665169869" class="twitter"><i class="bx bxl-twitter"></i></a>
 		
 		
       </div>
@@ -151,26 +141,28 @@
     <div class="container">
 
       <div style="font-size:26px;">
-        <h2>联系我们</h2>
-        <p><a onclick="qqemail()">1665169869@qq.com</a></p>
-        <p>QQ:1665169869</p>
+        <h3>关于</h3>
+        <h4 class="bx bx-phone-call">联系我们</h4>
+        <br>
+        <p class="bx bx-envelope" style="font-size:20px;"><a onclick="qqemail()">1665169869@qq.com</a></p>
+        <p class="zm zm-QQ" style="font-size:20px;">QQ:1665169869</p>
       </div>
 
       <div class="row mt-2">
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-map" ></i>
-            <h3>投稿 Email</h3>
-            <p class="social-links"><a onclick="qqemail()" href="#">1665169869@qq.com</a></p>
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p class="social-links"><a onclick="qqemail()" href="#" title="发送邮件">1665169869@qq.com</a></p>
           </div>  
         </div>
 
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>相关网址</h3>
-            <div class="social-links">
+            <i class="bx bx-link-external"></i>
+            <h3>外部链接</h3>
+            <div class="social-links" title="外部链接">
               <a href="https://www.baiyu.online" class="twitter">www.baiyu.online</a>
             </div>
           </div>
@@ -178,22 +170,23 @@
 
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>相关YY频道</h3>
-            <p class="social-links"><a href="yy://pd-[sid=2360&subid=1449977277]">1449977277</a></p>
+            <i class="bx bxl-twitter"></i>
+            <h3>Twitter</h3>
+            <p class="social-links"><a href="https://twitter.com/baiyu1665169869" class="twitter" title="推特">1449977277</a></p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>哔哩哔哩主页</h3>
-            <p class="social-links"><a href="https://space.bilibili.com/67823957">https://space.bilibili.com/67823957</a></p>
+            <i class="bx bx-link-alt"></i>
+            <h3>BILIBILI</h3>
+            <p class="social-links"><a href="https://space.bilibili.com/67823957" title="哔哩哔哩">https://space.bilibili.com/67823957</a></p>
           </div>
         </div>
       </div>
 
       <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-     闲聊群： 1026529014
+     闲聊群： 1026529014 <br>
+     原作者：夜斗（24982360） 二次修改：白羽（1665169869）
       </form>
 
     </div>
@@ -204,15 +197,15 @@
     <div class="container">
 
       <div style="font-size:26px;">
-        <h2>下载中心</h2>
-        <br>
+        <h3 class="bx bx-download">下载中心</h3>
+        <p style="font-size:20px;">欢迎投稿到邮箱</p>
       </div>
 
       <div class="row mt-2">
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-map"></i>
+            <i class="bx bx-cloud-download"></i>
             <h3>Iwara爬虫</h3>
             <p class="social-links">  
               <a target="target" href="https://whitefeathers.lanzous.com/b0bqht0yd">蓝奏云</a>
@@ -222,36 +215,30 @@
 
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-share-alt"></i>
+            <i class="bx bx-cloud-download"></i>
             <h3>待定</h3>
-            <p>待定</p>
-            <div class="social-links">
-              <!--请把a元素放这里-->
-            </div>
+            <p class="social-links">待定</p>
           </div>
         </div>
 
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-envelope"></i>
+            <i class="bx bx-cloud-download"></i>
             <h3>待定</h3>
             <p>待定</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-phone-call"></i>
+            <i class="bx bx-cloud-download"></i>
             <h3>待定</h3>
             <p>待定</p>
           </div>
         </div>
       </div>
-
       <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-     神秘安卓软件下载：
-     <div id="login_click"><a id="btlogin" target="target" href="./static/m/picacg.html">PicACG</a></div>
+      神秘软件下载：<div id="login_click"><a id="btlogin" target="target" class="bx bxl-android" href="./static/m/picacg.html">PicACG</a></div>
       </form>
-
     </div>
   </section><!-- End Contact Section -->
 
@@ -302,7 +289,7 @@
             }
             /*以下内容自定义修改*/
             var l = ""
-                o = ["欢迎来到白羽の小站","手机端请点击右上角打开菜单","来了就加个群叭qwq","本网站只是大自然的搬运工~" ].map(function (r) {
+                o = ["欢迎来到白羽の小站","来了就加个群叭qwq","本小站只是大自然的搬运工~" ].map(function (r) {
                     return r + ""
                 }), a = 2, g = 1, s = 5, d = 75,
                 b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
@@ -313,7 +300,65 @@
 		</script>
 </div> 
 <div class="dwn-dm-bottom" id="dwn-dm-bottom"> <!--弹幕必备的div--></div>
-<script type="text/javascript" src="./static/js/danmu.js"> //这里是弹幕</script>
+<script type="text/javascript" src="./static/js/Barrage.js"> //这里是弹幕</script>
 </body>
-<script src="./static/js/donghua.js"> //线性动画背景特效 </script>
+
+<script>
+  var system ={};  
+  var p = navigator.platform;       
+  system.win = p.indexOf("Win") == 0;  
+  system.mac = p.indexOf("Mac") == 0;  
+ if(system.win||system.mac||system.xll){//如果是电脑跳转到
+  !function(){
+    function n(n,e,t){
+    return n.getAttribute(e)||t
+    }
+    function e(n){
+    return document.getElementsByTagName(n)
+    }
+    function t(){
+    var t=e("script"),o=t.length,i=t[o-1];
+    return{
+    l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)
+    }
+    }
+    function o(){
+    a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
+    c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
+    }
+    function i(){
+    r.clearRect(0,0,a,c);
+    var n,e,t,o,m,l;
+    s.forEach(function(i,x){
+    for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
+    null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
+    l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
+    t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
+    }),
+    x(i)
+    }
+    var a,c,u,m=document.createElement("canvas"),
+    d=t(),l="c_n"+d.l,r=m.getContext("2d"),
+    x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
+    function(n){   
+    window.setTimeout(n,1e3/45)   
+    },   
+    w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,   
+    window.onmousemove=function(n){   
+    n=n||window.event,y.x=n.clientX,y.y=n.clientY   
+    },   
+    window.onmouseout=function(){   
+    y.x=null,y.y=null   
+    };   
+    for(var s=[],f=0;d.n>f;f++){   
+    var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})   
+    }   
+    u=s.concat([y]),   
+    setTimeout(function(){i()},100)   
+    }();  
+        window.location.href="#"; 
+ }else{  //如果是手机,跳转到
+        window.location.href="#";  
+  }
+</script>
 </html>

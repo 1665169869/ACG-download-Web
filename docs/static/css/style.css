@@ -7,8 +7,7 @@
  /* 下面是磨砂效果，可选 */
  /*  backdrop-filter: blur(10px); */
 }
-
-body::before {
+  body::before {
   content: "";
   position: fixed;
   background-size: cover;
@@ -22,7 +21,6 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
-
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
