@@ -1,14 +1,4 @@
-/**
-*  Name: YY.wiki
-*  URL: https://www.yy.wiki
-*  Author: 千玄
-*  Time: 2020年5月22日 10:03:00
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
+  body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   background-color: #000;
@@ -1183,4 +1173,12 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+p#bginfo {
+  font-size: 0.7rem;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.6);
+}
+p#bginfo a {
+  color: rgb(255, 255, 255);
 }

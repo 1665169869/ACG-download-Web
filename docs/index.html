@@ -22,8 +22,10 @@
   <link href="./static/css/owl.carousel.min.css" rel="stylesheet">
   <link href="./static/css/boxicons.min.css" rel="stylesheet">
   <link href="./static/css/venobox.css" rel="stylesheet">
+  <!--js files-->
   <script src="./static/js/google_ga3.js"></script>
   <script src="./static/js/jquery-1.11.1.min.js"></script>
+  <link href="../static/danmu.css">
 
   <!-- Template Main CSS File -->
   <link href="./static/css/style.css" rel="stylesheet">
@@ -62,46 +64,44 @@
       white-space: nowrap;
   }
 </style>
+<script type="text/javascript">
+  var weChatWait=2;
+  function downloadApk(){
+    window.open("static/m/picacg.html");
+  }
+  function qqqun(){
+    window.open("https://jq.qq.com/?_wv=1027&k=3d7wk5gW");
+  }
+  function qqemail(){
+    window.open("mailto:1665169869@qq.com")
+  }
+  </script>
+  <style>
+    #login_click{ margin-top:32px; height:40px;}
+    #login_click a 
+    {
+        text-decoration:none;
+      color:#f2f2f2;
+      background:rgba(236, 18, 120, 1);
+
+      padding: 20px 50px 20px 50px;
+      font-size:20px;
+      font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+      font-weight:bold;
+      border-radius:5px;
+
+      -webkit-transition:all linear 0.30s;
+      -moz-transition:all linear 0.30s;
+      transition:all linear 0.30s;
+
+      }
+       #login_click a:hover { background:#d35776; }
+
+    </style>
 </head>
 
 <body>
-  <script type="text/javascript">
-    var weChatWait=2;
-    function downloadApk(){
-      window.open("static/m/picacg.html");
-    }
-    function qqqun(){
-      window.open("https://jq.qq.com/?_wv=1027&k=3d7wk5gW");
-    }
-    function qqemail(){
-      window.open("mailto:1665169869@qq.com")
-    }
-    </script>
-		<style>
-
-      #login_click{ margin-top:32px; height:40px;}
-      #login_click a 
-      {
-      
-      
-          text-decoration:none;
-        color:#f2f2f2;
-        background:rgba(236, 18, 120, 1);
-  
-        padding: 20px 50px 20px 50px;
-        font-size:20px;
-        font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
-        font-weight:bold;
-        border-radius:5px;
-  
-        -webkit-transition:all linear 0.30s;
-        -moz-transition:all linear 0.30s;
-        transition:all linear 0.30s;
-  
-        }
-         #login_click a:hover { background:#d35776; }
-  
-      </style>
+  <script language="javascript" src="./static/js/time.js"></script>  <!--调用运行时间显示-->
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">
@@ -130,9 +130,19 @@
 		
 		
       </div>
-		<br>  
+    <br>  
+    <p id="bginfo" class="d-lg-block">
+      本小站已运行天数：
+      <a class="one-pan-link-mark">
+        <span id="timeDate">载入天数...</span>
+        <span id="times">载入时分秒...</span> <!--显示网站运行时间-->
+      </a>
+      (*╹▽╹*)
+    </p>
+
     </div>
   </header><!-- End Header -->
+
 
   <!-- ======= About Section ======= -->
 
@@ -150,10 +160,10 @@
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-map" ><div class="zm zm-youxiang"></div></i>
+            <i class="bx bx-map" ></i>
             <h3>投稿 Email</h3>
             <p class="social-links"><a onclick="qqemail()" href="#">1665169869@qq.com</a></p>
-          </div>
+          </div>  
         </div>
 
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
@@ -301,216 +311,9 @@
         };
         chakhsu(document.getElementById('chakhsu'));
 		</script>
-</div> <!--弹幕必备的div-->
-<div class="dwn-dm-bottom" id="dwn-dm-bottom">
-</div>
-<script type="text/javascript"> //这里是弹幕
-    var tanm = ["他只是暧昧成瘾、而你却走了心", "喜欢就加下群吧qwq","一直在开黑车，从未被超越", "“我重要吗？” “再重都要！”", "手机端请点击右上角打开菜单","加入群聊发车污污污","2020年还在手动？","千万不要以为高中单身时因为学校禁止早恋","明人不说暗话，你老婆真漂亮!","我们是学生，学生就要有学生的样子。    -「JOJO的奇妙冒险」","勇气并非来自体力，而是来自不屈不挠的意志。    -「守望先锋」","阁下是，人类？    -「东方妖妖梦」","哲♂学的力量","我在血海飘香弧光等你！","上帝为你关上了一扇门，然后就去洗洗睡了。","人与人的羁绊是真正的力量之源    -「少女前线」","喜欢上一个人是没有理由的！——「中二病也要谈恋爱-诚」","邪王真眼是最强的。——「小鸟游 六花」"];
-        (function f(win, doc) {
-            var danmArrayTop = [];//15个 同时
-            var danmArrayBottom = [];//15个 同时
-            var danmMoveDuration = 35;
-            var movPx = 5;
-            var startPosition = Math.ceil(Math.random() * 100);
-            var topContainer = null;
-            var bottomContainer = null;
-            var createDanmDuration = 0;
-            $(document).ready(function () {
-                calculateRemPx();
-                initPage();
-                initDanm();
-                initCartoon();
-            });
-            win.onload = function () {
-                let diffWidth = $(document).width() - $(win).width();
-                if (diffWidth > 0) {
-                    setTimeout(function () {
-                        win.scrollTo && win.scrollTo(diffWidth / 2, 0);
-                    }, 0);
-                }
-            };
-            function danm(el, speed, p) {
-                this.el = el;
-                this.position = p;
-                this.speed = speed;
-                this.width = -p;
-                this.state = "run";
-            }
-            danm.prototype.delete = function () {
-                this.state = "delete";
-                $(this.el).remove();
-            };
-            function initDanm() {
-                topContainer = $("#dwn-dm-top");
-                bottomContainer = $("#dwn-dm-bottom");
-                setInterval(moveDanm, danmMoveDuration);
-            }
-            function moveDM(b) {
-                var docWidth = $(doc).width();
-                if (b.position > (docWidth + b.width)) {
-                    b.delete();
-                }
-                else if (b.state === 'run') {
-                    b.position = b.position + b.speed;
-                    b.el.style.right = b.position + "px";
-                }
-            }
-            function moveDanm() {
-                if(createDanmDuration>=3600){
-                    createDanm();
-                    createDanmDuration=0;
-                }
-                 createDanmDuration+=danmMoveDuration;
-                danmArrayBottom.forEach(moveDM);
-                danmArrayTop.forEach(moveDM);
-            }
-            var top = 0.5;
-            var fontSizeArr = [1.8, 2.2, 2.5];
-            var tfsize = null;
-            var bfsize = null;
-            function createDanm() {
-                danmArrayTop = danmArrayTop.filter(function (b) {
-                    return b.state === "run"
-                });
-                danmArrayBottom = danmArrayBottom.filter(function (b) {
-                    return b.state === "run"
-                });
-                var topDm = createDmElement(tfsize, top, topContainer);
-                var t = topDm.el;
-                danmArrayTop.push(new danm(t, movPx, -topDm.width));
-                var bottomDm = createDmElement(bfsize, top, bottomContainer);
-                var b = bottomDm.el;
-                danmArrayBottom.push(new danm(b, movPx, -bottomDm.width));
-                top += 4;
-                top = top > 12 ? .5 : top;
-            }
-            function createDmElement(fsize, top, container) {
-                var t = document.createElement('span');
-                t.className = "dan-m-span";
-                t.textContent = tanm[startPosition];
-                startPosition += 1;
-                startPosition %= tanm.length;//100;
-                t.style.display = "none";
-                var tsize = 0;
-                if (t.textContent.length < 20) {
-                    tsize = Math.floor((Math.random() * 10) % 3);
-                }
-                if (fsize === 2 && tsize === 2) {
-                    tsize = 0;
-                }
-                t.style.fontSize = fontSizeArr[tsize] + 'rem';
-                t.style.top = top + 'rem';
-                container.append(t);
-                var twidth = $(t).width();
-                // var bwidth = $(b).width();
-                t.style.right = -twidth + "px";
-                // b.style.right = -bwidth + "px";
-                t.style.display = "block";
-                return {
-                    el:t,
-                    size: tsize,
-                    width:twidth,
-                    txtLength: t.textContent.length
-                }
-            }
-            function initPage() {
-                setTimeout(function () {
-                    $(".dwn-download-center").removeClass("opacity0");
-                }, 200);
-                setTimeout(function () {
-                    $(".dwn-body-line .line-left").removeClass("opacity0");
-                }, 500);
-                setTimeout(function () {
-                    $(".dwn-body-line .line-right").removeClass("opacity0");
-                }, 600);
-                setTimeout(function () {
-                    $(".dwn-diamond-qr").removeClass("opacity0").addClass("qr-normal");
-                }, 800);
-                var resizeCancel = null;
-                $(window).resize(function () {
-                    clearTimeout(resizeCancel);
-                    resizeCancel = setTimeout(function () {
-                        calculateRemPx();
-                    }, 300)
-                })
-            }
-            function initCartoon() {
-                setTimeout(function () {
-                    $(".cartoon-start .cartoon-left .cartoon-figure").animate({"left": "20px"}, "normal", "swing", function () {
-                        $(".cartoon-start").removeClass("cartoon-start")
-                    }).animate({left:0});
-                    $(".cartoon-start .cartoon-right .cartoon-figure").animate({"left": "-20px"}, "normal", "swing", function () {
-                        $(".cartoon-start").removeClass("cartoon-start")
-                    }).animate({left:0});
-                }, 1200);
-            }
-            function calculateRemPx() {
-                var width = $(win).width();
-                var height = $(win).height();
-                if (width < 1000) {
-                    $(document.documentElement).css("font-size", "12px");
-                    return;
-                }
-                var ratio = width / height;
-                var fontSize = 16;
-                if (ratio >= 1.8) { // 以宽度为准
-                    fontSize = width / 100
-                }
-                else { //以高度为准
-                    fontSize = height / 55
-                }
-                $(document.documentElement).css("font-size",  fontSize + "px");
-            }
-        })(window, document);
-    </script>  
+</div> 
+<div class="dwn-dm-bottom" id="dwn-dm-bottom"> <!--弹幕必备的div--></div>
+<script type="text/javascript" src="./static/js/danmu.js"> //这里是弹幕</script>
 </body>
-<script>
-  !function(){
-  function n(n,e,t){
-  return n.getAttribute(e)||t
-  }
-  function e(n){
-  return document.getElementsByTagName(n)
-  }
-  function t(){
-  var t=e("script"),o=t.length,i=t[o-1];
-  return{
-  l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)
-  }
-  }
-  function o(){
-  a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
-  c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
-  }
-  function i(){
-  r.clearRect(0,0,a,c);
-  var n,e,t,o,m,l;
-  s.forEach(function(i,x){
-  for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
-  null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
-  l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
-  t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
-  }),
-  x(i)
-  }
-  var a,c,u,m=document.createElement("canvas"),
-  d=t(),l="c_n"+d.l,r=m.getContext("2d"),
-  x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
-  function(n){   
-  window.setTimeout(n,1e3/45)   
-  },   
-  w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,   
-  window.onmousemove=function(n){   
-  n=n||window.event,y.x=n.clientX,y.y=n.clientY   
-  },   
-  window.onmouseout=function(){   
-  y.x=null,y.y=null   
-  };   
-  for(var s=[],f=0;d.n>f;f++){   
-  var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})   
-  }   
-  u=s.concat([y]),   
-  setTimeout(function(){i()},100)   
-  }();  
-  </script>
+<script src="./static/js/donghua.js"> //线性动画背景特效 </script>
 </html>
