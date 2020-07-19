@@ -3,9 +3,12 @@
   color: #fff;
   background-color: #000;
   position: relative;
+  cursor:url('../fonts/simpler_alt.cur'),auto;
+  
   user-select:none; /*网页禁止选择复制/
  /* 下面是磨砂效果，可选 */
  /*  backdrop-filter: blur(10px); */
+  
 }
   body::before {
   content: "";
@@ -29,6 +32,7 @@
 
 a {
   color: #18d26e;
+  cursor:url('../fonts/simpler_alt.cur'),auto;
 }
 
 a:hover {
@@ -55,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header * {
   transition: ease-in-out 0.3s;
+  cursor:url('../fonts/simpler_alt.cur'),auto;
 }
 
 #header h1 {
