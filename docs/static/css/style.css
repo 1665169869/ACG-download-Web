@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
   }
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 20em;
   }
 }
 
