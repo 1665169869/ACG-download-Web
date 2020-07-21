@@ -5,4 +5,4 @@
 
 还有一些js代码是没调用的，但是因为刚入门（不算入门，缝合怪一个），不敢乱删除
 
-[演示站点](https://www.baiyu.online/)
+[演示站点](https://www.baiyu.fun/)
