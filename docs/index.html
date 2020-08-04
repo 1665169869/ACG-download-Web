@@ -51,15 +51,7 @@
       white-space: nowrap;
   }
 </style>
-<script type="text/javascript">
-  var weChatWait=2;
-  function qqqun(){
-    window.open("https://jq.qq.com/?_wv=1027&k=3d7wk5gW");
-  }
-  function qqemail(){
-    window.open("mailto:1665169869@qq.com")
-  }
-  </script>
+<script src="./static/js/url.js"></script>
   <style>
     #login_click{ margin-top:32px; height:40px;}
     #login_click a 
@@ -109,15 +101,15 @@
           <li><a href="#download">下载</a></li>
          <!--  <li><a href="#portfolio">Soft</a></li> -->
           <li><a href="#contact">关于</a></li>
-          <li><a onclick="qqqun()" href="#">群聊</a></li>
+          <li><a onclick="qqqun()" href="javascript:void(0)">群聊</a></li>
 		  <li></li>
         </ul>
       </nav><!-- .nav-menu -->
 
-      <div class="social-links">
-        <a href="mailto:1665169869@qq.com" class="facebook"><i class="zm zm-youxiang"></i></a>
-        <a onclick="qqqun()" class="facebook" href="#"><i class="zm zm-QQ"></i></a>
-        <a href="#" class="google-plus"><i class="zm zm-weixin"></i></a>
+      <div class="social-links" target="target">
+        <a href="javascript:void(0)" onclick="qqemail()" class="facebook"><i class="zm zm-youxiang"></i></a>
+        <a onclick="qqqun()" class="facebook" href="javascript:void(0)"><i class="zm zm-QQ"></i></a>
+        <a href="javascript:void(0)" class="google-plus"><i class="zm zm-weixin"></i></a>
         <a href="https://github.com/1665169869/ACG-download-Web"><i class="bx bxl-github"></i></a>
         <a href="https://twitter.com/baiyu1665169869" class="twitter"><i class="bx bxl-twitter"></i></a>
 		
@@ -157,7 +149,7 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email</h3>
-            <p class="social-links"><a onclick="qqemail()" href="#" title="发送邮件">1665169869@qq.com</a></p>
+            <p class="social-links"><a onclick="qqemail()" href="javascript:void(0)" title="发送邮件">1665169869@qq.com</a></p>
           </div>  
         </div>
 
@@ -242,8 +234,8 @@
       </div>
       <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
       神秘软件下载：
-      <div id="login_click"><a id="btlogin" target="target" class="bx bxl-android" href="picacg.html">PicACG</a></div>
-      <div id="login_click"><a id="btlogin" target="target" class="bx bxl-android" href="https://iwara-app.sanqianssr.com/">Iwara</a></div>
+      <div id="login_click"><a id="btlogin" class="bx bxl-android" onclick="picacg()" href="javascript:void(0)">PicACG</a></div>
+      <div id="login_click"><a id="btlogin" class="bx bxl-android" onclick="iwara()" href="javascript:void(0)">Iwara</a></div>
       </form>
     </div>
   </section><!-- End Contact Section -->
@@ -362,9 +354,9 @@
     u=s.concat([y]),   
     setTimeout(function(){i()},100)   
     }();  
-        window.location.href="#"; 
+        //window.location.href="#"; 
  }else{  //如果是手机,跳转到
-        window.location.href="#";  
+        //window.location.href="#";  
   }
 </script>
 </html>
