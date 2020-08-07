@@ -116,14 +116,7 @@
 		
 		
       </div>  
-      <p id="bginfo" class="d-lg-block">
-        本小站已运行天数：
-        <a class="one-pan-link-mark">
-          <span id="timeDate">载入天数...</span>
-          <span id="times">载入时分秒...</span> <!--显示网站运行时间-->
-        </a>
-        (*╹▽╹*)
-      </p>
+      <div id="time"></div>
 
     </div>
   </header><!-- End Header -->
@@ -354,6 +347,10 @@
     u=s.concat([y]),   
     setTimeout(function(){i()},100)   
     }();  
+    window.onload = function() {
+      var time = document.getElementById("time")
+      time.innerHTML='<p id="bginfo" class="d-lg-block">本小站已运行天数：<a class="one-pan-link-mark"><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <!--显示网站运行时间--></a>(*╹▽╹*)</p>'
+    }
         //window.location.href="#"; 
  }else{  //如果是手机,跳转到
         //window.location.href="#";  
