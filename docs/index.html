@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--使用了https://github.com/atisawd/boxicons图片集-->
+<!--使用了https://github.com/atisawd/boxicons-->
 <html lang="ZH-CN">
 <head>
   <meta charset="utf-8">
@@ -74,16 +74,7 @@
        #login_click a:hover { background:#d35776; }
 
     </style>
-    <style>
-      /* 2D转化效果5 */
-      .animate5 {
-          transition: 0.4s;
-          font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
-      }
-      .animate5:hover { 
-          transform: translateY(-10px);
-      }
-      </style>
+
 </head>
 
 <body>
@@ -92,7 +83,7 @@
   <header id="header" class="header-tops">
     <div class="container">
    <!--<h1><a href="index.html">YY.wiki</a></h1> -->
-     <h1 class="animate5"><a href="index.html" class="mr-auto"><div style="color:#242527bf;font-size: 30px;">白色羽毛</div></a></h1> 
+     <h1><a href="index.html" class="mr-auto"><div style="color:#242527bf;font-size: 30px; text-align: center;">白色羽毛</div></a></h1> 
       <h2><div class="jz  ys" id="chakhsu"></div></h2>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -116,7 +107,7 @@
 		
 		
       </div>  
-      <div id="time"></div>
+      <p id="bginfo" class="d-lg-block">本小站已运行天数：<a class="one-pan-link-mark"><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <!--显示网站运行时间--></a>(*╹▽╹*)</p>
 
     </div>
   </header><!-- End Header -->
@@ -242,7 +233,7 @@
   </div> -->
   <!-- Vendor JS Files -->
   <script src="static/js/jquery.min.js"></script>
-  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.yy.wiki/static/js/bootstrap.bundle.min.js"></script>
   <script src="static/js/jquery.easing.min.js"></script>
   <script src="static/js/validate.js"></script>
   <script src="static/js/jquery.waypoints.min.js"></script>
@@ -347,10 +338,6 @@
     u=s.concat([y]),   
     setTimeout(function(){i()},100)   
     }();  
-    window.onload = function() {
-      var time = document.getElementById("time")
-      time.innerHTML='<p id="bginfo" class="d-lg-block">本小站已运行天数：<a class="one-pan-link-mark"><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <!--显示网站运行时间--></a>(*╹▽╹*)</p>'
-    }
         //window.location.href="#"; 
  }else{  //如果是手机,跳转到
         //window.location.href="#";  
