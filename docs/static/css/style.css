@@ -1212,3 +1212,47 @@ p#bginfo a {
   -moz-border-radius: 2em;
   border-radius: 2em
 }
+
+/* 弹幕和按钮 */
+.dwn-dm-bottom {
+  bottom: 0;
+  position: fixed;
+}
+.dwn-dm-top, .dwn-dm-bottom {
+  overflow: hidden;
+  width: 100%;
+  height: 14rem;
+  box-sizing: border-box;
+/*    padding: 1.5rem 0;*/
+}
+.dan-m-span {
+  user-select:none;
+  transition: right 30ms;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+
+#down_click {
+  margin-top: 32px;
+  height:40px;
+}
+#down_click a {
+  text-decoration:none;
+  color:#f2f2f2;
+  background: rgba(236,18,120,1);
+  padding: 20px 50px 20px 50px;
+  font-size: 20px;
+  font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+  font-weight:bold;
+  border-radius: 5px;
+  -webkit-transition: all linear 0.30s;
+  -moz-transition:all linear 0.30s;
+  transition:all linear 0.30s;
+}
+#down_click a:hover {
+  background: #d35776;
+}
