@@ -11,7 +11,7 @@
     font-style: Regular;
     src: url(../fonts/icofont.woff2) format("woff2"), 
     url(../fonts/icofont.woff) format("woff"),
-    url(../fonts/icofont1.svg) format("svg"),
+    url(../fonts/icofont.svg) format("svg"),
     url("https://icofont.com/icofont/fonts/icofont.eot") format('embedded-opentype'),
     url("https://icofont.com/icofont/fonts/icofont.ttf");
 }
