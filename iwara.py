@@ -34,8 +34,9 @@ if iwara_videos == 0:
 print('视频此页总数：' + str(iwara_videos))
 print("准备获取视频下载地址，请稍后。（中途请勿关闭程序或电脑）")
 
-links_text = re.findall("[^videos][A-Z-a-z-0-9]*",iwara_list[i])[1] # 视频ID链接
+
 for i in range(0,iwara_videos):
+    links_text = re.findall("[^videos][A-Z-a-z-0-9]*",iwara_list[i])[1] # 视频ID链接
     if links_text != '/':
         print(links_text) #测试，记得做好屏蔽
         iwara_video_id = links_text 
